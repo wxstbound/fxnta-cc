@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href=’https://fonts.googleapis.com/css?family=Abel’ rel=’stylesheet’>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>fxnta</title>
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
   <style>
-      body, h1, h2, p{
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-
-    body {
-      font-family: ‘Abel’;font-size: 22px;
-      color: #fff;
+    body, html {
+      width: 100%;
+      height: 100%;
       background-color: #000;
-      line-height: 1.5;
+      color: #fff;
+      font-family: 'Abel', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
     }
-    header {
-      font-family: ‘Abel’;font-size: 22px;
-      color: #000;
-      background-color: rgba(255, 255, 255, 0.7);
-      line-height: 1.5;
+    h1 {
+      font-size: clamp(2rem, 6vw, 5rem);
+      margin-bottom: 2rem;
+      text-transform: lowercase;
+      letter-spacing: 2px;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border-radius: 999px;
+    }
+    .btn:hover {
+      background: white;
+      color: black;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>fxnta</h1>
-  </header>
-
-  <h2>fxnta</h2>
-  <p>discord: https://discord.gg/UuMXdSqxK4</p>
+  <h1>fxnta</h1>
+  <a href="https://discord.gg/UuMXdSqxK4" class="btn" target="_blank" rel="noopener noreferrer">
+    join our discord
+  </a>
 </body>
+</html>
