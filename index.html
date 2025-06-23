@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dark Dev</title>
+  <title>wxst</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
@@ -19,14 +19,16 @@
 </head>
 <body class="min-h-screen flex items-center justify-center p-10">
   <div class="text-center max-w-xl w-full">
-    <h1 class="text-5xl font-bold mb-6 animate-pulse">Welcome to My Lair</h1>
-    <p class="text-xl mb-6 text-gray-400">I am a <span id="dynamic-word" class="text-purple-400 font-semibold fade-word">developer</span></p>
-    <img src="tech.jpg" alt="dark avatar" class="mx-auto rounded-full w-40 h-40 object-cover border-4 border-purple-700 shadow-lg mb-6" />
-    <p class="text-gray-500 text-sm">Built with 🔥 using HTML, TailwindCSS, and pure JavaScript</p>
+    <h1 class="text-6xl font-extrabold mb-6 tracking-wide text-purple-600 animate-pulse">insincere</h1>
+    <p class="text-2xl mb-8 text-gray-300">
+      I am a
+      <span id="dynamic-word" class="text-purple-400 font-bold fade-word">developer</span>
+    </p>
+    <img src="me.jpg" alt="pfp" class="mx-auto rounded-full w-44 h-44 object-cover border-4 border-purple-700 shadow-2xl ring-4 ring-purple-900 ring-opacity-40 mb-8 transform hover:scale-105 transition duration-300" />
   </div>
 
   <script>
-    const words = ["developer", "hacker", "dreamer", "technomancer", "builder"];
+    const words = ["developer", "inventor", "dreamer", "winner", "builder"];
     let index = 0;
     const el = document.getElementById("dynamic-word");
     setInterval(() => {
