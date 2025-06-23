@@ -73,6 +73,24 @@
       color: #ff69b4;
       font-size: 1.4rem;
     }
+    .back-button {
+      display: flex;
+      justify-content: center;
+      margin: 3rem auto;
+    }
+    .back-button a {
+      background: #ff69b4;
+      color: white;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .back-button a:hover {
+      background: #e055a3;
+    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
@@ -86,9 +104,19 @@
     <h2>General Info</h2>
     <p>Sophia is a 13 year old girl from Kansas.</p>
   </section>
+
+  
+  <section>
+    <h2>Price</h2>
+    <p>5 dollars for the limited client file, 10 dollars for the full. Includes name, address, socials, number, photos, etc.</p>
+  </section>
   
   <div class="contact">
     <p>For purchases or coaching, text us at: <br><strong>‪(786) 509-7165‬</strong>, and specify the product you would like.</p>
+  </div>
+
+  <div class="back-button">
+    <a href="https://fxnta.cc">← Back to home</a>
   </div>
 </body>
 </html>
