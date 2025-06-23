@@ -1,18 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<h>
-  <meta http-equiv="refresh" content="0; url=https://slat.cc/degen">
-  <script>window.location.href = "https://slat.cc/degen"</script>
-  <t>redirecting</t>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huzz Exchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      background: #000;
-      color: #fff;
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
+      background: #ffe4ec;
+      color: #333;
+      min-height: 100vh;
+    }
+    header {
+      background: #ff69b4;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .tile {
+      background: white;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .tile:hover {
+      transform: translateY(-5px);
+    }
+    .tile img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .tile-content {
+      padding: 1rem;
+    }
+    .tile-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .tile-subtitle {
+      font-size: 0.95rem;
+      color: #666;
     }
   </style>
-</h>
+</head>
 <body>
-  if not redirected, <a href="https://slat.cc/degen" style="color: #0af;">click here</a>
+  <header>Huzz Exchange</header>
+  <div class="container">
+    <a href="page.html" class="tile">
+      <img src="https://placehold.co/400x200/pink/fff?text=Item+1" alt="Tile Image 1">
+      <div class="tile-content">
+        <div class="tile-title">Title One</div>
+        <div class="tile-subtitle">This is the subtitle for item one.</div>
+      </div>
+    </a>
+    <a href="page.html" class="tile">
+      <img src="https://placehold.co/400x200/fc9/fff?text=Item+2" alt="Tile Image 2">
+      <div class="tile-content">
+        <div class="tile-title">Title Two</div>
+        <div class="tile-subtitle">This is the subtitle for item two.</div>
+      </div>
+    </a>
+    <a href="page.html" class="tile">
+      <img src="https://placehold.co/400x200/f9c/fff?text=Item+3" alt="Tile Image 3">
+      <div class="tile-content">
+        <div class="tile-title">Title Three</div>
+        <div class="tile-subtitle">This is the subtitle for item three.</div>
+      </div>
+    </a>
+    <a href="page.html" class="tile">
+      <img src="https://placehold.co/400x200/f9f/fff?text=Item+4" alt="Tile Image 4">
+      <div class="tile-content">
+        <div class="tile-title">Title Four</div>
+        <div class="tile-subtitle">This is the subtitle for item four.</div>
+      </div>
+    </a>
+  </div>
 </body>
 </html>
